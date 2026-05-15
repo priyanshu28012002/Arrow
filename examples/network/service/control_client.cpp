@@ -33,9 +33,8 @@ static const uint16_t PORT = 7401;
 int main()
 {
     // Robot IP address
-    // Localhost used for demo
     ServiceClient<MotorCmd, MotorAck>
-        client("127.0.0.1", PORT);
+        client("192.168.0.219", PORT,25000);
 
     RIPC_INFO(
         "ControlPC",
@@ -62,8 +61,7 @@ int main()
 
         MotorAck ack{};
 
-        auto st =
-            client.tryCall(cmd, ack, 3000);
+        auto st = client.tryCall(cmd, ack, 3000);
 
         std::ostringstream ss;
 
@@ -98,35 +96,35 @@ int main()
 
     std::vector<std::thread> threads;
 
-    for(int i = 0; i < 6; ++i)
-    {
-        threads.emplace_back([i]()
-        {
-            ServiceClient<MotorCmd, MotorAck>
-                c("127.0.0.1", PORT);
+    // for(int i = 0; i < 6; ++i)
+    // {
+    //     threads.emplace_back([i]()
+    //     {
+    //         ServiceClient<MotorCmd, MotorAck>
+    //             c("127.0.0.1", PORT);
 
-            MotorCmd cmd
-            {
-                int8_t(i * 15),
-                int8_t(-i * 15)
-            };
+    //         MotorCmd cmd
+    //         {
+    //             int8_t(i * 15),
+    //             int8_t(-i * 15)
+    //         };
 
-            MotorAck ack{};
+    //         MotorAck ack{};
 
-            c.tryCall(cmd, ack, 3000);
+    //         c.tryCall(cmd, ack, 3000);
 
-            RIPC_INFO(
-                "ControlPC",
-                "[t" + std::to_string(i) + "] "
-                + std::string(ack.msg)
-            );
-        });
-    }
+    //         RIPC_INFO(
+    //             "ControlPC",
+    //             "[t" + std::to_string(i) + "] "
+    //             + std::string(ack.msg)
+    //         );
+    //     });
+    // }
 
-    for(auto& t : threads)
-    {
-        t.join();
-    }
+    // for(auto& t : threads)
+    // {
+    //     t.join();
+    // }
 
     RIPC_INFO("ControlPC", "Done.");
 

@@ -36,7 +36,7 @@ int main()
 {
     // Connect to server
     ServiceClient<MotorCmd, MotorAck>
-        client("127.0.0.1", PORT);
+        client("192.168.0.219", PORT);
 
     std::vector<std::pair<int,int>> cmds =
     {

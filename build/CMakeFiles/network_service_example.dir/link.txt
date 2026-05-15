@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/network_service_example.dir/examples/main4.cpp.o -o network_service_example  -lpthread -lrt 

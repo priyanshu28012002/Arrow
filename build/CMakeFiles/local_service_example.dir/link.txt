@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/local_service_example.dir/examples/main1.cpp.o -o local_service_example  -lpthread -lrt 

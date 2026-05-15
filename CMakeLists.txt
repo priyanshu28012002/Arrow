@@ -28,6 +28,21 @@ target_link_libraries(network_action_example pthread rt)
 add_executable(network_stream_example examples/main6.cpp)
 target_link_libraries(network_stream_example pthread rt)
 
+
+add_executable(network_service_client examples/network/service/control_client.cpp)
+target_link_libraries(network_service_client pthread rt)
+
+add_executable(network_service_server examples/network/service/robot_server.cpp)
+target_link_libraries(network_service_server pthread rt)
+
+
+add_executable(network_action_client examples/network/action/control_client.cpp)
+target_link_libraries(network_action_client pthread rt)
+
+add_executable(network_action_server examples/network/action/robot_server.cpp)
+target_link_libraries(network_action_server pthread rt)
+
+
 # ── Output all binaries to build/ ─────────────────────────────────────────────
 set_target_properties(
     local_service_example

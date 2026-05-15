@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/control_client_network_stream_example.dir/examples/network/service/control_client.cpp.o -o control_client_network_stream_example  -lpthread -lrt 

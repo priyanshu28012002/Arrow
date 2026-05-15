@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/network_stream_example.dir/examples/main6.cpp.o -o network_stream_example  -lpthread -lrt 

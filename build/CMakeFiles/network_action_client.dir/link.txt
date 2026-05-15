@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/network_action_client.dir/examples/network/action/control_client.cpp.o -o network_action_client  -lpthread -lrt 

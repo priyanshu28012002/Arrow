@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/local_stream_example.dir/examples/main3.cpp.o -o local_stream_example  -lpthread -lrt 

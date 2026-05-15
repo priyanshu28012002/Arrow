@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/network_service_server.dir/examples/network/service/robot_server.cpp.o -o network_service_server  -lpthread -lrt 

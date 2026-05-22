@@ -246,6 +246,32 @@ network_action_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_action_server.dir/build.make CMakeFiles/network_action_server.dir/build
 .PHONY : network_action_server/fast
 
+#=============================================================================
+# Target rules for targets named robot_watchdog
+
+# Build rule for target.
+robot_watchdog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robot_watchdog
+.PHONY : robot_watchdog
+
+# fast build rule for target.
+robot_watchdog/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_watchdog.dir/build.make CMakeFiles/robot_watchdog.dir/build
+.PHONY : robot_watchdog/fast
+
+#=============================================================================
+# Target rules for targets named client_watchdog
+
+# Build rule for target.
+client_watchdog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client_watchdog
+.PHONY : client_watchdog
+
+# fast build rule for target.
+client_watchdog/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_watchdog.dir/build.make CMakeFiles/client_watchdog.dir/build
+.PHONY : client_watchdog/fast
+
 examples/main1.o: examples/main1.cpp.o
 .PHONY : examples/main1.o
 
@@ -486,6 +512,54 @@ examples/network/service/robot_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_service_server.dir/build.make CMakeFiles/network_service_server.dir/examples/network/service/robot_server.cpp.s
 .PHONY : examples/network/service/robot_server.cpp.s
 
+examples/network_wrapper_robot_end/robot.o: examples/network_wrapper_robot_end/robot.cpp.o
+.PHONY : examples/network_wrapper_robot_end/robot.o
+
+# target to build an object file
+examples/network_wrapper_robot_end/robot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_watchdog.dir/build.make CMakeFiles/robot_watchdog.dir/examples/network_wrapper_robot_end/robot.cpp.o
+.PHONY : examples/network_wrapper_robot_end/robot.cpp.o
+
+examples/network_wrapper_robot_end/robot.i: examples/network_wrapper_robot_end/robot.cpp.i
+.PHONY : examples/network_wrapper_robot_end/robot.i
+
+# target to preprocess a source file
+examples/network_wrapper_robot_end/robot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_watchdog.dir/build.make CMakeFiles/robot_watchdog.dir/examples/network_wrapper_robot_end/robot.cpp.i
+.PHONY : examples/network_wrapper_robot_end/robot.cpp.i
+
+examples/network_wrapper_robot_end/robot.s: examples/network_wrapper_robot_end/robot.cpp.s
+.PHONY : examples/network_wrapper_robot_end/robot.s
+
+# target to generate assembly for a file
+examples/network_wrapper_robot_end/robot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_watchdog.dir/build.make CMakeFiles/robot_watchdog.dir/examples/network_wrapper_robot_end/robot.cpp.s
+.PHONY : examples/network_wrapper_robot_end/robot.cpp.s
+
+examples/network_wrapper_ui_end/client.o: examples/network_wrapper_ui_end/client.cpp.o
+.PHONY : examples/network_wrapper_ui_end/client.o
+
+# target to build an object file
+examples/network_wrapper_ui_end/client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_watchdog.dir/build.make CMakeFiles/client_watchdog.dir/examples/network_wrapper_ui_end/client.cpp.o
+.PHONY : examples/network_wrapper_ui_end/client.cpp.o
+
+examples/network_wrapper_ui_end/client.i: examples/network_wrapper_ui_end/client.cpp.i
+.PHONY : examples/network_wrapper_ui_end/client.i
+
+# target to preprocess a source file
+examples/network_wrapper_ui_end/client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_watchdog.dir/build.make CMakeFiles/client_watchdog.dir/examples/network_wrapper_ui_end/client.cpp.i
+.PHONY : examples/network_wrapper_ui_end/client.cpp.i
+
+examples/network_wrapper_ui_end/client.s: examples/network_wrapper_ui_end/client.cpp.s
+.PHONY : examples/network_wrapper_ui_end/client.s
+
+# target to generate assembly for a file
+examples/network_wrapper_ui_end/client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_watchdog.dir/build.make CMakeFiles/client_watchdog.dir/examples/network_wrapper_ui_end/client.cpp.s
+.PHONY : examples/network_wrapper_ui_end/client.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -494,6 +568,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... client_watchdog"
 	@echo "... local_action_example"
 	@echo "... local_service_example"
 	@echo "... local_stream_example"
@@ -504,6 +579,7 @@ help:
 	@echo "... network_service_example"
 	@echo "... network_service_server"
 	@echo "... network_stream_example"
+	@echo "... robot_watchdog"
 	@echo "... examples/main1.o"
 	@echo "... examples/main1.i"
 	@echo "... examples/main1.s"
@@ -534,6 +610,12 @@ help:
 	@echo "... examples/network/service/robot_server.o"
 	@echo "... examples/network/service/robot_server.i"
 	@echo "... examples/network/service/robot_server.s"
+	@echo "... examples/network_wrapper_robot_end/robot.o"
+	@echo "... examples/network_wrapper_robot_end/robot.i"
+	@echo "... examples/network_wrapper_robot_end/robot.s"
+	@echo "... examples/network_wrapper_ui_end/client.o"
+	@echo "... examples/network_wrapper_ui_end/client.i"
+	@echo "... examples/network_wrapper_ui_end/client.s"
 .PHONY : help
 
 

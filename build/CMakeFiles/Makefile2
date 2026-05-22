@@ -73,6 +73,8 @@ all: CMakeFiles/network_service_client.dir/all
 all: CMakeFiles/network_service_server.dir/all
 all: CMakeFiles/network_action_client.dir/all
 all: CMakeFiles/network_action_server.dir/all
+all: CMakeFiles/robot_watchdog.dir/all
+all: CMakeFiles/client_watchdog.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -90,6 +92,8 @@ clean: CMakeFiles/network_service_client.dir/clean
 clean: CMakeFiles/network_service_server.dir/clean
 clean: CMakeFiles/network_action_client.dir/clean
 clean: CMakeFiles/network_action_server.dir/clean
+clean: CMakeFiles/robot_watchdog.dir/clean
+clean: CMakeFiles/client_watchdog.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -99,7 +103,7 @@ clean: CMakeFiles/network_action_server.dir/clean
 CMakeFiles/local_service_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/local_service_example.dir/build.make CMakeFiles/local_service_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/local_service_example.dir/build.make CMakeFiles/local_service_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=3,4 "Built target local_service_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=5,6 "Built target local_service_example"
 .PHONY : CMakeFiles/local_service_example.dir/all
 
 # Build rule for subdir invocation for target.
@@ -125,7 +129,7 @@ CMakeFiles/local_service_example.dir/clean:
 CMakeFiles/local_action_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/local_action_example.dir/build.make CMakeFiles/local_action_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/local_action_example.dir/build.make CMakeFiles/local_action_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=1,2 "Built target local_action_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=3,4 "Built target local_action_example"
 .PHONY : CMakeFiles/local_action_example.dir/all
 
 # Build rule for subdir invocation for target.
@@ -151,7 +155,7 @@ CMakeFiles/local_action_example.dir/clean:
 CMakeFiles/local_stream_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/local_stream_example.dir/build.make CMakeFiles/local_stream_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/local_stream_example.dir/build.make CMakeFiles/local_stream_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=5,6 "Built target local_stream_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=7,8 "Built target local_stream_example"
 .PHONY : CMakeFiles/local_stream_example.dir/all
 
 # Build rule for subdir invocation for target.
@@ -177,7 +181,7 @@ CMakeFiles/local_stream_example.dir/clean:
 CMakeFiles/network_service_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_service_example.dir/build.make CMakeFiles/network_service_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_service_example.dir/build.make CMakeFiles/network_service_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=15,16 "Built target network_service_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=17,18 "Built target network_service_example"
 .PHONY : CMakeFiles/network_service_example.dir/all
 
 # Build rule for subdir invocation for target.
@@ -203,7 +207,7 @@ CMakeFiles/network_service_example.dir/clean:
 CMakeFiles/network_action_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_action_example.dir/build.make CMakeFiles/network_action_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_action_example.dir/build.make CMakeFiles/network_action_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=9,10 "Built target network_action_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=11,12 "Built target network_action_example"
 .PHONY : CMakeFiles/network_action_example.dir/all
 
 # Build rule for subdir invocation for target.
@@ -229,7 +233,7 @@ CMakeFiles/network_action_example.dir/clean:
 CMakeFiles/network_stream_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_stream_example.dir/build.make CMakeFiles/network_stream_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_stream_example.dir/build.make CMakeFiles/network_stream_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=19,20 "Built target network_stream_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=21,22 "Built target network_stream_example"
 .PHONY : CMakeFiles/network_stream_example.dir/all
 
 # Build rule for subdir invocation for target.
@@ -255,7 +259,7 @@ CMakeFiles/network_stream_example.dir/clean:
 CMakeFiles/network_service_client.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_service_client.dir/build.make CMakeFiles/network_service_client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_service_client.dir/build.make CMakeFiles/network_service_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=13,14 "Built target network_service_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=15,16 "Built target network_service_client"
 .PHONY : CMakeFiles/network_service_client.dir/all
 
 # Build rule for subdir invocation for target.
@@ -281,7 +285,7 @@ CMakeFiles/network_service_client.dir/clean:
 CMakeFiles/network_service_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_service_server.dir/build.make CMakeFiles/network_service_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_service_server.dir/build.make CMakeFiles/network_service_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=17,18 "Built target network_service_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=19,20 "Built target network_service_server"
 .PHONY : CMakeFiles/network_service_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -307,7 +311,7 @@ CMakeFiles/network_service_server.dir/clean:
 CMakeFiles/network_action_client.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_action_client.dir/build.make CMakeFiles/network_action_client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_action_client.dir/build.make CMakeFiles/network_action_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=7,8 "Built target network_action_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=9,10 "Built target network_action_client"
 .PHONY : CMakeFiles/network_action_client.dir/all
 
 # Build rule for subdir invocation for target.
@@ -333,7 +337,7 @@ CMakeFiles/network_action_client.dir/clean:
 CMakeFiles/network_action_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_action_server.dir/build.make CMakeFiles/network_action_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_action_server.dir/build.make CMakeFiles/network_action_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=11,12 "Built target network_action_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=13,14 "Built target network_action_server"
 .PHONY : CMakeFiles/network_action_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -351,6 +355,58 @@ network_action_server: CMakeFiles/network_action_server.dir/rule
 CMakeFiles/network_action_server.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network_action_server.dir/build.make CMakeFiles/network_action_server.dir/clean
 .PHONY : CMakeFiles/network_action_server.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/robot_watchdog.dir
+
+# All Build rule for target.
+CMakeFiles/robot_watchdog.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_watchdog.dir/build.make CMakeFiles/robot_watchdog.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_watchdog.dir/build.make CMakeFiles/robot_watchdog.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=23,24 "Built target robot_watchdog"
+.PHONY : CMakeFiles/robot_watchdog.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/robot_watchdog.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_watchdog.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles 0
+.PHONY : CMakeFiles/robot_watchdog.dir/rule
+
+# Convenience name for target.
+robot_watchdog: CMakeFiles/robot_watchdog.dir/rule
+.PHONY : robot_watchdog
+
+# clean rule for target.
+CMakeFiles/robot_watchdog.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_watchdog.dir/build.make CMakeFiles/robot_watchdog.dir/clean
+.PHONY : CMakeFiles/robot_watchdog.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/client_watchdog.dir
+
+# All Build rule for target.
+CMakeFiles/client_watchdog.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_watchdog.dir/build.make CMakeFiles/client_watchdog.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_watchdog.dir/build.make CMakeFiles/client_watchdog.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles --progress-num=1,2 "Built target client_watchdog"
+.PHONY : CMakeFiles/client_watchdog.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/client_watchdog.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/client_watchdog.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles 0
+.PHONY : CMakeFiles/client_watchdog.dir/rule
+
+# Convenience name for target.
+client_watchdog: CMakeFiles/client_watchdog.dir/rule
+.PHONY : client_watchdog
+
+# clean rule for target.
+CMakeFiles/client_watchdog.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_watchdog.dir/build.make CMakeFiles/client_watchdog.dir/clean
+.PHONY : CMakeFiles/client_watchdog.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

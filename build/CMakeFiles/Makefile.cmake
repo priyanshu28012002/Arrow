@@ -49,4 +49,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/network_service_server.dir/DependInfo.cmake"
   "CMakeFiles/network_action_client.dir/DependInfo.cmake"
   "CMakeFiles/network_action_server.dir/DependInfo.cmake"
+  "CMakeFiles/robot_watchdog.dir/DependInfo.cmake"
+  "CMakeFiles/client_watchdog.dir/DependInfo.cmake"
   )

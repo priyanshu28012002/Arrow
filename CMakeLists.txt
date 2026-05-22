@@ -43,6 +43,21 @@ add_executable(network_action_server examples/network/action/robot_server.cpp)
 target_link_libraries(network_action_server pthread rt)
 
 
+# Connection 
+
+# add_executable(robot_server examples/connection/robot_server.cpp)
+# target_link_libraries(robot_server pthread rt)
+
+# add_executable(control_client examples/connection/control_client.cpp)
+# target_link_libraries(control_client pthread rt)
+
+
+add_executable(robot_watchdog /home/octobot/Github/ServiceActions/Arrow/examples/network_wrapper_robot_end/robot.cpp)
+target_link_libraries(robot_watchdog pthread rt)
+
+add_executable(client_watchdog /home/octobot/Github/ServiceActions/Arrow/examples/network_wrapper_ui_end/client.cpp)
+target_link_libraries(client_watchdog pthread rt)
+
 # ── Output all binaries to build/ ─────────────────────────────────────────────
 set_target_properties(
     local_service_example

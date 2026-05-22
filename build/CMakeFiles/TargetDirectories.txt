@@ -8,5 +8,7 @@
 /home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles/network_service_server.dir
 /home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles/network_action_client.dir
 /home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles/network_action_server.dir
+/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles/robot_watchdog.dir
+/home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles/client_watchdog.dir
 /home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles/edit_cache.dir
 /home/octobot/Github/ServiceActions/Arrow/build/CMakeFiles/rebuild_cache.dir
